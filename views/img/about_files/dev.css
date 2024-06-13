@@ -1,0 +1,44 @@
+main.home section.chairman_message_section{
+    padding:50px 0;
+}
+main.home section.chairman_message_section .heading{
+    font-size: 46px;
+}
+main.home section.chairman_message_section .details_wrapper p{
+    color: #151522;
+    font-size: 20px;
+    font-weight: 300;
+    margin-block-end: 25px;
+    opacity: .8;
+    line-height: 1.2;
+    font-family: "Proxima Nova Lt";
+}
+
+
+@media all and (max-width:1199px){
+    main.home section.chairman_message_section .avatar{
+        margin: 20px 0 0;
+    }
+}
+
+main.home section.chairman_message_section .details_wrapper .__btn {
+    padding: 12px 25px;
+}
+.general_card_wrapper .details_wrapper p.description{
+    font-size: 24px !important;
+    margin-block-end: 20px !important;
+}
+.general_card_wrapper .details_wrapper p.description:after{
+
+    margin-block-start: 20px !important;
+}
+
+@media all and (min-width:1200px){
+    main.home section.chairman_message_section .details_wrapper p{
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    main.home section.news_events .general_card_wrapper img{
+    	    min-height: unset !important;
+    }
+}
