@@ -22,8 +22,8 @@ html {
     padding-bottom: 0rem !important;
 }
 .navbar-toggler {
-    background-color: white;
-    border-color: white;
+    background-color: rgb(196, 192, 192) !important ;
+    border-color: rgb(0, 0, 0) !important ;
 }
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -239,7 +239,10 @@ html {
     margin: auto;
     border-radius: 3px;
 }
-#about .team-socail:hover{
+/* #about .team-socail:hover{
+    background-color: rgb(115, 172, 241);
+} */
+#about .team-card:hover .team-socail{
     background-color: rgb(115, 172, 241);
 }
 #about .team-socail img{
@@ -293,6 +296,7 @@ html {
     scale: 0.8;
 }
 
+/* This is for responsive  */
 @media (min-width:510px)and(max-width:770px){
     #initiatives .box{
         width: 100%;
