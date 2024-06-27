@@ -21,6 +21,9 @@ app.get("/tech.html", (req, res) => {
 app.get("/university.html", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'university.html'));
 });
+app.get("/club.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'club.html'));
+});
 
 
 // START THE SERVER
