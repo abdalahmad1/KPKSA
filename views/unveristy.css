@@ -440,7 +440,16 @@ div.card {
 
 /* This is for responsive section  */
 
-@media  (min-width:580px)and(max-width:830px) {
+@media (max-width:830px) {
+    #home h1 {
+        font-family: "Baloo Bhai 2", sans-serif;
+        text-align: center;
+        font-size: 4rem;
+    }
+    #home h3 {
+        font-family: "Baloo Bhai 2", sans-serif;
+        font-size: 2rem;
+    }
     .enroll-container {
         display: flex;
         flex-wrap: wrap;
@@ -454,6 +463,9 @@ div.card {
     }
     .enroll-container .enroll-box img{
         padding-bottom: 1rem;
+    }
+    .enroll-container .enroll-box {
+        width: 52%;
     }
 }
 @media (max-width:579px){
@@ -468,7 +480,19 @@ div.card {
         padding: 2rem;
         flex-direction: column;
     }
+    .enroll-container .enroll-box {
+        width: 60%;
+    }
     .enroll-container .enroll-box img{
         padding-bottom: 1rem;
+    }
+    .enroll-container .enroll-box img {
+        width: 232px;
+        height: 232px;
+        border-radius: 50%;
+    }
+    #partner .img img{
+        width: 130px;
+        height: 130px;
     }
 }
