@@ -299,6 +299,14 @@ body h2{
     color: white;
 
 }
+.tooltip-container a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 
 /* This is for partner section  */
 

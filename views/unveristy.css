@@ -66,6 +66,9 @@ html {
 }
 
 /* This is for Home section  */
+body{
+    background-color: #d4d4d4;
+}
 body::before {
     content: " ";
     position: absolute;
@@ -96,175 +99,144 @@ body::before {
     font-family: "Baloo Bhai 2", sans-serif;
     font-size: 3rem;
 }
-
-
-/* This is the cource section  */
-#cource>h2 {
+/* This is for the Course Section  */
+#cource h2 {
     font-family: "Baloo Bhai 2", sans-serif;
     text-align: center;
     font-size: 3rem;
 }
-
-.cource-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100%;
-}
-
-div.card {
-    position: relative;
-    width: 350px;
-    height: 525px;
-    margin: 2rem;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card img {
-    fill: #000;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 3px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px #000000;
-    background-color: #f2f2f2;
-    color: #ffffff;
-}
-
-.card__content {
-    color: #000000;
-    position: absolute;
-    top: 0;
-    left: 0;
+.cource-container{
     width: 100%;
     height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card:hover .card__content {
-    transform: rotateX(0deg);
-}
-
-.card__title {
-    margin: 0;
-    padding-left: 5px;
-    font-size: 24px;
-    color: #000000;
-    font-weight: 700;
-}
-
-.card:hover img {
-    scale: 0;
-}
-
-.card__description {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #000000;
-    line-height: 1.4;
-}
-
-.card__description span {
-    font-weight: bolder;
-}
-
-/* Commands to change the shadows in dark mode */
-@media (prefers-color-scheme: dark) {
-    .card:hover {
-        box-shadow: 0 8px 16px #000000;
-    }
-}
-
-.button {
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    padding-block: 0.5rem;
-    padding-inline: 1.25rem;
-    background-color: rgb(0 107 179);
-    border-radius: 9999px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    color: #ffff;
-    gap: 10px;
-    font-weight: bold;
-    border: 3px solid #ffffff4d;
-    outline: none;
-    overflow: hidden;
-    font-size: 15px;
+    align-items: center;
 }
-
-.button a {
-    text-decoration: none;
-    list-style: none;
+.cource-box{
+    /* border: 1px solid black; */
+    height: 107%;
+    width: 30%;
+    margin: 1rem;
+}
+.cource-box:hover{
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-1{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/trading-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.card-2{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/full\ development.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.card-3{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img//front-end.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.card-4{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/back-end.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.card-5{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/ai.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.card-6{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("./img//graphice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width:100%;
+}
+.cource-cards p{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(0, 153, 255);
+    margin: 1rem;
+}
+.cource-card h2{
+    color: rgb(0, 0, 0);
+    font-size: 2.8rem;
+    line-height: 4rem;
     color: white;
 }
-
-.icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease-in-out;
+.cource-date{
+    width: 60%;
+    padding-left: 1rem;
 }
+.cource-box .cource-btn{
+    display: block;
+    text-align: center;
+    width: 90%;
+    padding: 3px 0px;
+    background-color: rgb(6, 143, 255);
+    margin: auto;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 2px solid white;
 
-.button:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
 }
-
-.button:hover .icon {
-    transform: translate(4px);
+.cource-box .cource-btn:hover{
+    background-color: black;
 }
-
-.button:hover::before {
-    animation: shine 1.5s ease-out infinite;
+.cource-box .cource-btn a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }
-
-.button::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background-image: linear-gradient(120deg,
-            rgba(255, 255, 255, 0) 30%,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0) 70%);
-    top: 0;
-    left: -100px;
-    opacity: 0.6;
-}
-
-@keyframes shine {
-    0% {
-        left: -100px;
-    }
-
-    60% {
-        left: 100%;
-    }
-
-    to {
-        left: 100%;
-    }
-}
-
-
 /* This is for Enrollment Section  */
 .enroll-container {
     display: flex;
@@ -363,6 +335,14 @@ div.card {
     color: white;
 
 }
+.tooltip-container a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 
 /* This is for partner section  */
 
@@ -450,6 +430,12 @@ div.card {
         font-family: "Baloo Bhai 2", sans-serif;
         font-size: 2rem;
     }
+    .cource-box{
+        /* border: 1px solid black; */
+        height: 107%;
+        width: 45%;
+        margin: 1rem;
+    }
     .enroll-container {
         display: flex;
         flex-wrap: wrap;
@@ -479,6 +465,12 @@ div.card {
         align-items: center;
         padding: 2rem;
         flex-direction: column;
+    }
+    .cource-box{
+        /* border: 1px solid black; */
+        height: 107%;
+        width:70%;
+        margin: 1rem;
     }
     .enroll-container .enroll-box {
         width: 60%;
