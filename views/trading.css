@@ -64,26 +64,30 @@ html {
     height: 80px;
     width: 80px;
 }
-#home{
-    padding-top:5rem ;
+
+#home {
+    padding-top: 5rem;
     width: 100vw;
-    height: 100vh;
-    background: url("./img/Enablers-training-back.webp");
+    height: 150vh;
+    background: url("./img/bg-payment.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 }
-#home h2{
+
+#home .home-container h2 {
     font-family: "Baloo Bhai 2", sans-serif;
     text-align: center;
     font-size: 3rem;
     padding-top: 2rem;
 }
-#home .stating{
+
+#home .stating {
     text-align: center;
 }
-#home .stating .btn-1{
+
+#home .stating .btn-1 {
     color: white;
     font-size: 1.3rem;
     background-color: orangered;
@@ -91,7 +95,8 @@ html {
     margin-bottom: 1.5rem;
     margin-left: 2rem;
 }
-#home .stating .btn-2{
+
+#home .stating .btn-2 {
     color: white;
     font-size: 1.3rem;
     background-color: black;
@@ -99,32 +104,40 @@ html {
     padding: 1rem 2rem;
 }
 
-#home .col{
+#home .col {
     display: flex;
     align-items: center;
-    margin: 2rem;
+    /* margin: 2rem; */
+    margin-top: 2rem;
 }
-#home .col img{
+
+#home .col img {
     width: 50px;
     height: 50px;
 }
-#home .col .para{
+
+#home .col .para {
+    margin-left: 1rem;
     line-height: 3px;
 }
-#home .col .para .bold{
+
+#home .col .para .bold {
     font-weight: bolder;
 }
-#home .price{
+
+#home .price {
     text-align: center;
     font-size: 3rem;
     color: rgb(197, 83, 12);
     font-weight: bolder;
 }
-#home .row1{
+
+#home .row1 {
     display: flex;
     justify-content: center;
 }
-#home .btn a{
+
+#home .btn a {
     width: 100%;
     display: block;
     margin: auto;
@@ -139,12 +152,79 @@ html {
     align-items: center;
     justify-content: center;
 }
-#home .btn a:hover{
+
+#home .btn a:hover {
     background-color: black;
 }
 
+/* This is the club section  */
+#club {
+    margin: 2rem;
+}
 
+#club .club-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
+#club .club-li {
+    display: flex;
+    width: 48%;
+    margin: 4px;
+}
+
+#club .club-li li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#club .club-li img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
+
+/* This is the module section  */
+#module {
+    background-color: rgb(223, 223, 223);
+    width: 100vw;
+}
+
+.module-container {
+    padding: 2.5rem;
+}
+
+.module-container h2 {
+    color: orangered;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.conatiner {
+    width: 80%;
+    display: block;
+    background-color: white;
+    margin: auto;
+}
+
+.conatiner h3 {
+    font-weight: bolder;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.conatiner h5 {
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.conatiner ul {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
 
 /* This is Footer section  */
 #footer {
@@ -194,14 +274,48 @@ html {
 #footer .socail-img img:hover {
     scale: 0.8;
 }
-@media (max-width:850px){
-    .row{
+
+@media (max-width:850px) {
+    .row {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .col{
-        justify-content:normal;
+
+    .col {
+        justify-content: normal;
         padding-left: 3rem;
+    }
+}
+
+@media (max-width:706px) {
+    #home {
+        padding-top: 5rem;
+        width: 100vw;
+        height: 310vh;
+        background: url("./img/bg-payment.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col {
+        justify-content: normal;
+        padding-left: 3rem;
+    }
+}
+
+@media (max-width:579px) {
+    #club .club-li {
+        display: flex;
+        width: 100%;
+        margin: 1rem;
     }
 }
