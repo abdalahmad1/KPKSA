@@ -213,7 +213,13 @@ html {
     font-weight: bolder;
     padding-top: 2rem;
     padding-left: 3rem;
-    padding-bottom: 1.5rem;
+    /* padding-bottom: 1.5rem; */
+}
+.conatiner h4{
+    font-weight: bolder;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    font-size: 2rem;
 }
 
 .conatiner h5 {

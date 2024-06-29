@@ -27,6 +27,21 @@ app.get("/club.html", (req, res) => {
 app.get("/trading.html", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'trading.html'));
 });
+app.get("/fullstack.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'fullstack.html'));
+});
+app.get("/front-end.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', "front-end.html"));
+});
+app.get("/back-end.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', "back-end.html"));
+});
+app.get("/Ai.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', "Ai.html"));
+});
+app.get("/Graphic.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', "Graphic.html"));
+});
 
 
 // START THE SERVER
