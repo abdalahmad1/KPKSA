@@ -33,7 +33,7 @@ html {
 
 .container-fluid {
   margin: 0px;
-  background-color: #162427;
+  background-color:  #0e1e2a;;
 }
 
 .navbar .nav-link {
@@ -44,7 +44,7 @@ html {
 }
 
 .navbar .nav-link:hover {
-  color: black;
+  color: #5c87c5;
 }
 
 .nav-item:not(:last-child) {
