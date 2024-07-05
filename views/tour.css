@@ -1,0 +1,225 @@
+/* This is the universal  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+VN:wght@100..400&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+body h2{
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+body::before {
+    content: " ";
+    position: absolute;
+    background: url('./img/tour-bg1.jpeg') no-repeat center center/cover;
+    width: 100vw;
+    height: 85vh;
+    z-index: -1;
+}
+
+#home {
+    width: 100vw;
+    height: 85vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+#home h1{
+    font-size: 5rem;
+    color: white;
+}
+
+/* This is for tour section  */
+#tour h5{
+    font-family: "Ubuntu:ital"; 
+    font-size: 2rem;
+    color: rgb(26 100 204);
+    text-align: center;
+    font-weight: bolder;
+}
+#tour .tour-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#tour .box{
+    width: 30%;
+    height: 100%;
+    margin: 1rem;
+}
+#tour .box img{
+    width: 100%;
+    height: 200px;
+}
+#tour .tour-card h4{
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+    color: rgb(26 100 204);;
+}
+#tour .tour-card p{
+    text-align: center;
+}
+
+/* This is for Purpose Section  */
+#purpose{
+    width: 100%;
+    background-color: rgb(26 100 204);
+    padding: 3rem 0rem;
+    color: white;
+}
+
+
+/* This is benefit section  */
+.benefit-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.benefit-box{
+    width: 30%;
+    height: 100%;
+    margin: 1rem;
+}
+.card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #384c6c, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0288cb, #48a7b9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  
+
+  /* This is for responsive */
+
+  @media (max-width:959px){
+    #tour .box{
+        width: 30%;
+        height: 100%;
+        margin: 1rem;
+    }
+
+    .benefit-box {
+        width: 42%;
+        height: 100%;
+        margin: 1rem;
+    }
+  }
+  @media (max-width:625px){
+    #home h1 {
+        font-size: 3rem;
+        color: white;
+    }
+    #home h4{
+        font-size: 1rem;
+    }
+    #tour .box{
+        width: 70%;
+        height: 100%;
+        margin: 1rem;
+    }
+
+    .benefit-box {
+        width: 70%;
+        height: 100%;
+        margin: 1rem;
+    }
+  }
