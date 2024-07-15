@@ -27,6 +27,9 @@ app.get("/club.html", (req, res) => {
 app.get("/tour.html", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'tour.html'));
 });
+app.get("/product.html", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'product.html'));
+});
 app.get("/trading.html", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'trading.html'));
 });

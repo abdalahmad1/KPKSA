@@ -1,0 +1,92 @@
+/* This is for Home section  */
+body{
+    background-color: #d4d4d4;
+}
+body::before {
+    content: " ";
+    position: absolute;
+    background: url('./img/product.webp') no-repeat center center/cover;
+    width: 100vw;
+    height: 75vh;
+    z-index: -1;
+}
+
+#home {
+    width: 100vw;
+    height: 85vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: center;
+    font-size: 6rem;
+}
+
+#home h3 {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 3rem;
+}
+
+/* This is the product section  */
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-box{
+    width: 30%;
+    height: 100%;
+}
+.product-box img{
+    width: 100%;
+    height: 300px;
+}
+#product-card1{
+    margin: 2rem 0rem;
+}
+.product-box:hover{
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product-box a{
+    text-decoration: none;
+    list-style-type:  none;
+    padding: 0.5rem 3rem;
+    background-color: rgb(43, 152, 255);
+    color: white;
+    margin: 3rem 0rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    border: none;
+}
+.product-box h3{
+    padding: 1rem 0rem;
+}
+@media(max-width:900px){
+    .product-box{
+        width: 48%;
+        height: 100%;
+    }
+}
+@media(max-width:536px){
+    .product-box{
+        width: 80%;
+        height: 100%;
+    }
+    #home h1 {
+        font-family: "Baloo Bhai 2", sans-serif;
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    #home h3 {
+        font-family: "Baloo Bhai 2", sans-serif;
+        font-size: 2rem;
+    }
+}
