@@ -42,6 +42,7 @@ body::before {
 .product-box{
     width: 30%;
     height: 100%;
+    border: 1px solid black;
 }
 .product-box img{
     width: 100%;
